@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: discordpy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 16:38+0000\n"
-"PO-Revision-Date: 2022-08-15 16:40\n"
+"PO-Revision-Date: 2022-08-20 11:10\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -2413,7 +2413,7 @@ msgstr "この関数は冪等性を保持しており、関数がグローバル
 #: ../../../discord/ext/commands/hybrid.py:docstring of discord.ext.commands.core.Command.remove_check:12
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.remove_check:12
 msgid "The function to remove from the checks."
-msgstr "チェックから除去する関数"
+msgstr "チェックから除去する関数。"
 
 #: ../../../discord/ext/commands/core.py:docstring of discord.ext.commands.core.Command.update:1
 #: ../../../discord/ext/commands/core.py:docstring of discord.ext.commands.core.Command.update:1
@@ -3171,7 +3171,7 @@ msgstr "``string`` 引数は位置限定引数になりました。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.remove_mentions:9
 msgid "The string with mentions removed."
-msgstr "メンションが削除されたテキスト。"
+msgstr "メンションが除去された文字列。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.HelpCommand.cog:1
 msgid "A property for retrieving or setting the cog for the help command."
@@ -3456,7 +3456,7 @@ msgstr ":meth:`get_command_signature`"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.send_command_help:28
 msgid "There are more than just these attributes but feel free to play around with these to help you get started to get the output that you want."
-msgstr "これらの属性以外にももっとありますが、欲しい出力を手にし始めるのを助けてくれるこいつらで遊ぶことに開放感を感じてみてください。"
+msgstr "これら以外にももっと属性はありますが、欲しい出力を得るのを助けてくれるこいつらで遊ぶことに開放感を感じてみてください。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.send_command_help:35
 msgid "The command that was requested for help."
@@ -3473,7 +3473,7 @@ msgstr "デフォルトの実装では何もしません。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.prepare_help_command:12
 msgid "This is called *inside* the help command callback body. So all the usual rules that happen inside apply here as well."
-msgstr "これは*内部*ヘルプコマンドコールバック本体と呼ばれていますので、内部で発生する通常のルールはすべてここでも適用されます。"
+msgstr "これは *内部* ヘルプコマンドコールバック本体と呼ばれていますので、内部で発生する通常のルールはすべてここでも適用されます。 "
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.HelpCommand.prepare_help_command:17
 msgid "``ctx`` and ``command`` parameters are now positional-only."
@@ -3573,11 +3573,11 @@ msgstr "見出しからのコマンドのインデントの量。デフォルト
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand:46
 msgid "The arguments list's heading string used when the help command is invoked with a command name. Useful for i18n. Defaults to ``\"Arguments:\"``. Shown when :attr:`.show_parameter_descriptions` is ``True``."
-msgstr ""
+msgstr "コマンド名を指定してhelpコマンドを実行したときに使用される引数リストの見出し文字列です。国際化対応に便利です。デフォルトは ``\"Arguments:\"`` です。:attr:`.show_parameter_descriptions` が ``True`` の場合に表示されます。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand:56
 msgid "Whether to show the parameter descriptions. Defaults to ``True``. Setting this to ``False`` will revert to showing the :attr:`~.commands.Command.signature` instead."
-msgstr ""
+msgstr "パラメータの説明を表示するかどうか。デフォルトは ``True`` です。``False`` に設定すると、代わりに :attr:`~.commands.Command.signature` が表示されるようになります。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand:65
 msgid "The command list's heading string used when the help command is invoked with a category name. Useful for i18n. Defaults to ``\"Commands:\"``"
@@ -3585,7 +3585,7 @@ msgstr "ヘルプコマンドがカテゴリ名で呼び出されたときに使
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand:72
 msgid "The default argument description string used when the argument's :attr:`~.commands.Parameter.description` is ``None``. Useful for i18n. Defaults to ``\"No description given.\"``"
-msgstr ""
+msgstr "引数の :attr:`~.commands.Parameter.description` が ``None`` である場合に使用される、デフォルトの引数の説明文字列です。国際化対応に便利です。デフォルトは ``\"No description given.\"`` です。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand:81
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.MinimalHelpCommand:45
@@ -3616,7 +3616,7 @@ msgstr ":class:`str`: Helpコマンドの末尾の文字列を返します。主
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.get_command_signature:3
 msgid "Calls :meth:`~.HelpCommand.get_command_signature` if :attr:`show_parameter_descriptions` is ``False`` else returns a modified signature where the command parameters are not shown."
-msgstr ""
+msgstr ":attr:`show_parameter_descriptions` が ``False`` の場合に :meth:`~.HelpCommand.get_command_signature` を呼び出し、それ以外の場合はコマンドパラメータを表示しない修正したシグネチャを返します。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_indented_commands:1
 msgid "Indents a list of commands after the specified heading."
@@ -3644,15 +3644,15 @@ msgstr "インデント間の差分に使用する最大サイズです。指定
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_command_arguments:1
 msgid "Indents a list of command arguments after the :attr:`.arguments_heading`."
-msgstr ""
+msgstr "コマンドの引数のリストを :attr:`.arguments_heading` の後にインデントします。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_command_arguments:3
 msgid "The default implementation is the argument :attr:`~.commands.Parameter.name` indented by :attr:`indent` spaces, padded to ``max_size`` using :meth:`~HelpCommand.get_max_size` followed by the argument's :attr:`~.commands.Parameter.description` or :attr:`.default_argument_description` and then shortened to fit into the :attr:`width` and then :attr:`~.commands.Parameter.displayed_default` between () if one is present after that."
-msgstr ""
+msgstr "デフォルトの実装では、引数の :attr:`~.commands.Parameter.name` は :attr:`indent` の量のスペースでインデントされ、引数の :attr:`~. commands.Parameter.description` または :attr:`.default_argument_description` が後に続くよう :meth:`~HelpCommand.get_max_size` を用いて ``max_size`` にパディングされ、そして引数の :attr:`width` と :attr:`~.commands.Parameter.displayed_default` の間に () があれば、その後に入るように短縮されます。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_command_arguments:12
 msgid "The command to list the arguments for."
-msgstr ""
+msgstr "引数の一覧を表示するコマンド。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.send_pages:1
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.MinimalHelpCommand.send_pages:1
@@ -3665,7 +3665,7 @@ msgstr "コマンドとグループのインデントされていないブロッ
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_command_formatting:7
 msgid ":meth:`.add_command_arguments` is now called if :attr:`.show_parameter_descriptions` is ``True``."
-msgstr ""
+msgstr ":meth:`.add_command_arguments` は :attr:`.show_parameter_descriptions` が ``True`` であれば呼び出されるようになりました。"
 
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.DefaultHelpCommand.add_command_formatting:10
 #: ../../../discord/ext/commands/help.py:docstring of discord.ext.commands.help.MinimalHelpCommand.add_command_formatting:7
@@ -5386,7 +5386,7 @@ msgstr "このパラメータに使用すべきコンバーター。"
 #: ../../../discord/ext/commands/parameters.py:docstring of discord.ext.commands.Parameter.description:1
 #: ../../../discord/ext/commands/parameters.py:docstring of discord.ext.commands.parameters.parameter:20
 msgid "The description of this parameter."
-msgstr ""
+msgstr "このパラメータの説明。"
 
 #: ../../../discord/ext/commands/parameters.py:docstring of discord.ext.commands.Parameter.displayed_default:1
 msgid "The displayed default in :class:`Command.signature`."
@@ -5422,7 +5422,7 @@ msgstr ":attr:`Command.signature` で表示される既定値。"
 
 #: ../../../discord/ext/commands/parameters.py:docstring of discord.ext.commands.parameters.parameter:1
 msgid "param(\\*, converter=..., default=..., description=..., displayed_default=...)"
-msgstr ""
+msgstr "param(\\*, converter=..., default=..., description=..., displayed_default=...)"
 
 #: ../../../discord/ext/commands/parameters.py:docstring of discord.ext.commands.parameters.parameter:3
 msgid "An alias for :func:`parameter`."
